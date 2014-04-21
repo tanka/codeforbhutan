@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/app_name"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/img_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/power"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/place_info"
+            android:layout_alignTop="@+id/img_ref"
+            android:text="Description of the place"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/place_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_ref"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/img_ref"
+            android:text="Name of the place"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
